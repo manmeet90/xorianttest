@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        div{
+            margin: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main" class="container">
+        <p>Library Management System</p>
+        <ng-view></ng-view>
+    </div>
+    <script src="/libs/angular/angular.min.js"></script>
+    <script src="/libs/angular-route/angular-route.min.js"></script>
+    <script src="./userForm/userFormComponent.js"></script>
+    <script src="./controllers/AddBookFormController.js"></script>
+    <script src="./booksList/BookListComponent.js"></script>
+    <script src="./issueBookComponent/issueBookComponent.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

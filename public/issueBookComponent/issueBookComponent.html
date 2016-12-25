@@ -1,0 +1,20 @@
+<div>
+    <form class="form">
+        <div>
+            <label for="user">Select user</label>
+            <select class="form-control" name="user" id="user" ng-options="user as user.username for user in vm.users track by user.id" ng-model="vm.user">
+
+            </select>
+        </div>
+        <div>
+            <label for="book">Select book</label>
+            <select class="form-control" name="book" id="book" ng-options="book as book.bookName for book in vm.books track by book.id" ng-model="vm.book">
+                
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-primary" ng-if="vm.type == '1'" ng-click="vm.issueBook()">Issue Book</button>
+            <button class="btn btn-primary" ng-if="vm.type == '2'" ng-click="vm.returnBook()">Return Book</button>
+        </div>
+    </form>
+</div>

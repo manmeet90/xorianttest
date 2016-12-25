@@ -1,0 +1,15 @@
+<div class="col-xs-12">
+    <ul class="pull-left list-inline">
+        <li>
+            <a href="#/addBook">Add Book</a>
+        </li>
+        <li>
+            <a href="#/issuebook">Issue Book</a>
+        </li>
+        <li>
+            <a href="#/returnbook">Return Book</a>
+        </li>
+    </ul>
+    <p class="pull-right">Welcome {{loggedInUser.username}}&nbsp;&nbsp;<a href="#/home" ng-click="logout()" class="text-danger">Logout</a></p>
+</div>
+<books-list></books-list>

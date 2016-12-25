@@ -1,0 +1,17 @@
+<p>Books List</p>
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Copies</th>
+        <th>Copies Available</th>
+        <th>Action</th>
+    </tr>
+    <tr ng-repeat="book in $ctrl.books">
+        <td>{{book.bookName}}</td>
+        <td>${{book.price}}</td>
+        <td>{{book.copies}}</td>
+        <td>{{book.copiesAvailable}}</td>
+        <td><button class="btn btn-danger" ng-click="$ctrl.deleteBook(book.id)">Delete Book</button></td>
+    </tr>
+</table>

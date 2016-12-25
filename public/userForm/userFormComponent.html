@@ -1,0 +1,14 @@
+<form class="form">
+    <div>
+        <label for="username">username</label>
+        <input type="text" name="username" ng-model="vm.username" class="form-control" />
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input type="text" name="password" ng-model="vm.password" class="form-control" />
+    </div>
+    <div>
+        <button class="btn btn-primary" ng-if="vm.type == '1'" ng-click="vm.login()">Login</button>
+        <button class="btn btn-primary" ng-if="vm.type == '2'" ng-click="vm.register()">Register</button>
+    </div>
+</form>

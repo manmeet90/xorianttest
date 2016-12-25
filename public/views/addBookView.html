@@ -1,0 +1,18 @@
+<a href="#/">Back</a><br/>
+<form name="addBookForm" class="form">
+    <div>
+        <label for="bookName">Book Name</label>
+        <input type="text" class="form-control" name="bookName" ng-model="vm.bookName" />
+    </div>
+    <div>
+        <label for="price">Price</label>
+        <input type="number"  class="form-control" name="price" ng-model="vm.price" />
+    </div>
+    <div>
+        <label for="copies">Number of Copies</label>
+        <input type="number" class="form-control" name="copies" ng-model="vm.copies" />
+    </div>
+    <div>
+        <button class="btn btn-primary" ng-click="vm.addBook($event)">Add</button>
+    </div>
+</form>
